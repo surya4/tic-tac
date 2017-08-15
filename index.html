@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="audio-property" class="sound">
+          <a href="#">
+            <img id="mute_sound" src="play.svg" width="32" height="32" alt="Sound On">
+          </a>
+          <!-- <i id="mute_sound" class="fa fa-volume-up fa-2x" aria-hidden="false"></i> -->
+          <audio id="audio" src="audio.mp3" type="audio/mp3"></audio>
+          <!-- <i class="fa fa-volume-off" aria-hidden="true"></i> -->
+        </div>
+        <div class="play-button">
+          <div id="play-with">
+            <span id="play-text" class="multi-comp">Play with</span>
+            <span id="comp" class="multi-comp"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+            <span id="peopl" class="multi-comp"><i class="fa fa-users" aria-hidden="true"></i></span>
+          </div>
+          <div id="reset-board">
+            <span>Play Again</span>
+          </div>
+        </div>
+        <div class="game">
+            <div class="square-board">
+                <button id="0" class="left square top" value=""></button>
+                <button id="1" class="left square mid" value=""></button>
+                <button id="2" class="square bottom" value=""></button>
+                <button id="3" class="middle square top" value=""></button>
+                <button id="4" class="middle square mid" value=""></button>
+                <button id="5" class=" square bottom" value=""></button>
+                <button id="6" class="right square" value=""></button>
+                <button id="7" class="right square" value=""></button>
+                <button id="8" class="square" value=""></button>
+            </div>
+            <div class="players">
+                <p class="player1"><span class="val">Player1 (X)</span>
+                    <span id="p1" class="score">0</span></p>
+
+                <p class="tie"><span class="val">Ties</span>
+                    <span id="ties" class="score">0</span></p>
+
+                <p class="player2"><span class="val">Player2 (O)</span>
+                    <span id="p2" class="score">0</span></p>
+
+            </div>
+            <div class="restart"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="app2.js"></script>
+</body>
+
+</html>
